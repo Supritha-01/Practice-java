@@ -22,7 +22,23 @@ public class CondStatements {
 			System.out.println("Oops!");
 		}
 
-		// else if
+		// if-else-if ladder
+
+		int marks = 65;
+
+		if (marks < 50) {
+			System.out.println("Fail");
+		} else if (marks >= 50 && marks < 60) {
+			System.out.println("D Grade");
+		} else if (marks >= 60 && marks < 70) {
+			System.out.println("C Grade");
+		} else if (marks >= 70 && marks < 80) {
+			System.out.println("B Grade");
+		} else if (marks >= 80 && marks < 90) {
+			System.out.println("A Grade");
+		} else {
+			System.out.println("Invalid");
+		}
 
 		int age = 25;
 		if (age < 20) {
@@ -32,6 +48,19 @@ public class CondStatements {
 		} else {
 
 			System.out.println("Invalid age!");
+		}
+
+		// nested if
+		int age1 = 30;
+		int wieght = 50;
+		if (age1 >= 30) {
+			if (wieght >= 50) {
+				System.out.println("Eligible to donate blood");
+			}else {
+				System.out.println("Not eligible to donate blood");
+			}
+		}else {
+			System.out.println("Age must be greater than or equal to 30");
 		}
 
 		// switch
@@ -75,7 +104,5 @@ public class CondStatements {
 			break;
 		default:
 			System.out.println("Looking forward to the Weekend");
-		}
 	}
-
-}
+}}
